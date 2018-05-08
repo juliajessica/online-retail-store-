@@ -23,7 +23,7 @@ export class MarketplaceComponent implements OnInit {
   } //use this when you want something to automoatically load
 
   goToDetailPage(clickedAlbum: Album){
-    this.router.navigate(['albums', clickedAlbum.id]);
+    // this.router.navigate(['albums', clickedAlbum.id]);
   };
   //These arguments are used to construct the URL to our route. 'albums' refers to the first portion of the route's path. clickedAlbum.id refers to the dynamic segment of the path. If clickedAlbum.id is 37, this would create a route path of albums/37.
 }

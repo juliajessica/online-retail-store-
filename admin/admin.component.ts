@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Album } from '../model/album.model';
+
 
 @Component({
   selector: 'app-admin',
@@ -10,6 +12,11 @@ export class AdminComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
+  }
+
+  submitForm(title: string, artist: string, description: string){
+    let newAlbum: Album = new Album(title, artist, description);
+    console.log(newAlbum);
   }
 
 }

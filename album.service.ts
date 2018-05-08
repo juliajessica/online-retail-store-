@@ -15,11 +15,11 @@ export class AlbumService {
   } //returns the list of imported ALBUMS
 
   getAlbumsById(albumId: number){
-    for(let i=0; i<=ALBUMS.length - 1; i++) {
-      if (ALBUMS[i].id === albumId){
-        return ALBUMS[i];
-      }
-    }
+    // for(let i=0; i<=ALBUMS.length - 1; i++) {
+    //   if (ALBUMS[i].id === albumId){
+    //     return ALBUMS[i];
+    //   }
+    // }
   }
   //returns a specific album
 

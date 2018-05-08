@@ -14,7 +14,12 @@ export class AlbumService {
     return this.albums;
   } //returns the list of imported ALBUMS
 
-  getAlbumsById(albumId: number){
+  addAlbum(newAlbum: Album){
+    this.albums.push(newAlbum);
+  }
+
+  getAlbumsById(albumId: string){
+    return this.database.object('albums/' + albumId);
     // for(let i=0; i<=ALBUMS.length - 1; i++) {
     //   if (ALBUMS[i].id === albumId){
     //     return ALBUMS[i];
